@@ -3,11 +3,13 @@ import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 
 const navItems = [
+  { name: 'Home', path: '/home' },
   { name: 'Hydro', path: '/hydro' },
   { name: 'Solar', path: '/solar' },
   { name: 'Wind', path: '/wind' },
   { name: 'CSR', path: '/csr' },
   { name: 'About Us', path: '/about' },
+  
 ];
 
 export default function Navbar() {
