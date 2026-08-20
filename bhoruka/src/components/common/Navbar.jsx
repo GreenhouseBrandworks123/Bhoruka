@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import logo from '../../assets/images/logo.png';
 
 const navItems = [
   { name: 'Hydro', path: '/hydro' },
@@ -34,9 +35,9 @@ export default function Navbar() {
               aria-label="Bhoruka - Home"
             >
               <img
-                src="/logo.png"
+                src={logo}
                 alt="Bhoruka Logo"
-                className="h-10 sm:h-12 max-w-[150px] object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+                className="h-20 sm:h-25 max-w-[150px] object-contain transition-transform duration-200 group-hover:scale-[1.02]"
               />
             </Link>
           </div>
