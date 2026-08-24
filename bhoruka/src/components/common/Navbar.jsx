@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 
 const navItems = [
-  { name: 'Home', path: '/home' },
+  { name: 'Home', path: '/' },
   { name: 'Hydro', path: '/hydro' },
   { name: 'Solar', path: '/solar' },
   { name: 'Wind', path: '/wind' },
