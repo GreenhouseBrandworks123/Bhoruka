@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+:root {
+  --brand-navy: #003e7e;
+  --brand-navy-dark: #002c5b;
+  --bg-soft-blue: #f4f7fa;
+}
+
+.bg-primary {
+  background-color: var(--brand-navy) !important;
+}
+
+.text-primary {
+  color: var(--brand-navy) !important;
+}
+
+.bg-primary-soft {
+  background-color: rgba(0, 62, 126, 0.08);
+}
+
+.project-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background-color: #ffffff;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 62, 126, 0.12) !important;
+}
+
+.card-header {
+  background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%) !important;
+}
