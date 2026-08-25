@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/common/Navbar';
 
 // Page Imports
+// Page Imports
 import Home from './pages/Home';
+import Windpower from './pages/operations/WindPower'
 import HydroPower from './pages/operations/HydroPower'; // 1. Imported HydroPower
 import SolarPower from './pages/operations/SolarPower'; // 2. Imported SolarPower
 
-// Placeholder view component for demonstration
+// Placeholder for unbuilt pages
 const PagePlaceholder = ({ title }) => (
   <main className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center min-h-[400px] flex flex-col justify-center items-center">
@@ -30,12 +32,15 @@ function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/wind" element = {<Windpower/>}/>
             
             {/* 2. Replaced PagePlaceholder with HydroPower */}
             <Route path="/hydro" element={<HydroPower />} />
 
             {/* Other routes remain placeholders for now */}
             <Route path="/solar" element={<SolarPower />} />
+            {/* Placeholders */}
+            <Route path="/hydro" element={<PagePlaceholder title="Hydro Energy" />} />
             <Route path="/wind" element={<PagePlaceholder title="Wind Energy" />} />
             <Route path="/csr" element={<PagePlaceholder title="Corporate Social Responsibility" />} />
             <Route path="/about" element={<PagePlaceholder title="About Us" />} />
