@@ -2,8 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/common/Navbar';
 
-// 1. IMPORT YOUR ACTUAL HOME PAGE HERE
+// Page Imports
 import Home from './pages/Home';
+import HydroPower from './pages/operations/HydroPower'; // 1. Imported HydroPower
+import SolarPower from './pages/operations/SolarPower'; // 2. Imported SolarPower
 
 // Placeholder view component for demonstration
 const PagePlaceholder = ({ title }) => (
@@ -27,12 +29,13 @@ function App() {
         {/* Page Routing */}
         <div className="flex-grow">
           <Routes>
-            {/* 2. REPLACE THE PLACEHOLDER WITH YOUR HOME COMPONENT */}
             <Route path="/" element={<Home />} />
             
-            {/* Keep the other placeholders for now until you build those pages */}
-            <Route path="/hydro" element={<PagePlaceholder title="Hydro Energy" />} />
-            <Route path="/solar" element={<PagePlaceholder title="Solar Energy" />} />
+            {/* 2. Replaced PagePlaceholder with HydroPower */}
+            <Route path="/hydro" element={<HydroPower />} />
+
+            {/* Other routes remain placeholders for now */}
+            <Route path="/solar" element={<SolarPower />} />
             <Route path="/wind" element={<PagePlaceholder title="Wind Energy" />} />
             <Route path="/csr" element={<PagePlaceholder title="Corporate Social Responsibility" />} />
             <Route path="/about" element={<PagePlaceholder title="About Us" />} />
