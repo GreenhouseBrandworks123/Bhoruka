@@ -10,8 +10,6 @@ import Home from './pages/Home';
 import Windpower from './pages/operations/WindPower'
 import HydroPower from './pages/operations/HydroPower'; // 1. Imported HydroPower
 import SolarPower from './pages/operations/SolarPower'; // 2. Imported SolarPower
-import Home from "./pages/Home";
-import Windpower from "./pages/operations/WindPower";
 
 // Placeholder for unbuilt pages
 const PagePlaceholder = ({ title }) => (
