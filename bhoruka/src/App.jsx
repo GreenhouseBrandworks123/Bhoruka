@@ -5,13 +5,10 @@ import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
 
 // Page Imports
-// Page Imports
-import Home from './pages/Home';
-import Windpower from './pages/operations/WindPower'
-import HydroPower from './pages/operations/HydroPower'; // 1. Imported HydroPower
-import SolarPower from './pages/operations/SolarPower'; // 2. Imported SolarPower
 import Home from "./pages/Home";
 import Windpower from "./pages/operations/WindPower";
+import HydroPower from "./pages/operations/HydroPower";
+import SolarPower from "./pages/operations/SolarPower";
 
 // Placeholder for unbuilt pages
 const PagePlaceholder = ({ title }) => (
@@ -42,20 +39,11 @@ function App() {
 
             <Route path="/" element={<Home />} />
 
-            <Route
-              path="/wind"
-              element={<Windpower />}
-            />
+            <Route path="/wind" element={<Windpower />} />
 
-            <Route
-              path="/hydro"
-              element={<PagePlaceholder title="Hydro Energy" />}
-            />
+            <Route path="/hydro" element={<HydroPower />} />
 
-            <Route
-              path="/solar"
-              element={<PagePlaceholder title="Solar Energy" />}
-            />
+            <Route path="/solar" element={<SolarPower />} />
 
             <Route
               path="/csr"
@@ -76,19 +64,6 @@ function App() {
               element={<PagePlaceholder title="Contact Us" />}
             />
 
-            <Route path="/wind" element = {<Windpower/>}/>
-            
-            {/* 2. Replaced PagePlaceholder with HydroPower */}
-            <Route path="/hydro" element={<HydroPower />} />
-
-            {/* Other routes remain placeholders for now */}
-            <Route path="/solar" element={<SolarPower />} />
-            {/* Placeholders */}
-            <Route path="/hydro" element={<PagePlaceholder title="Hydro Energy" />} />
-            <Route path="/wind" element={<PagePlaceholder title="Wind Energy" />} />
-            <Route path="/csr" element={<PagePlaceholder title="Corporate Social Responsibility" />} />
-            <Route path="/about" element={<PagePlaceholder title="About Us" />} />
-            <Route path="/contact" element={<PagePlaceholder title="Contact Us" />} />
           </Routes>
         </div>
 
