@@ -13,15 +13,36 @@ const EnergyPageTemplate = ({ hero, about, stats, benefits, projects, energyName
   return (
     <div className="w-full font-sans text-slate-800">
       
-      {/* 1. HERO SECTION */}
-      <section className="relative w-full h-[70vh] min-h-[600px] flex items-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${hero.bgImage})` }} 
-        >
+      {/* ==================== 1. HERO SECTION ==================== */}
+      <section className="relative w-full h-[70vh] min-h-[600px] flex items-center overflow-hidden">
+        
+        {/* Background Container */}
+        <div className="absolute inset-0 bg-slate-900">
+          
+          {/* Conditional Video or Image Rendering */}
+          {hero.bgVideo ? (
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              poster={hero.bgImage}
+              className="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src={hero.bgVideo} type="video/mp4" />
+            </video>
+          ) : (
+            <div 
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${hero.bgImage})` }} 
+            />
+          )}
+
+          {/* Dark gradient overlay so the white text is readable */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
         </div>
 
+        {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="max-w-2xl text-white">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">

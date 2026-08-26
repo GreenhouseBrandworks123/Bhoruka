@@ -67,3 +67,47 @@ export const solarProjects = [
     image: Rangenahalli
   }
 ]
+
+// ================= WIND PROJECTS =================
+export const windProjects = [
+  {
+    id: "wind-1",
+    name: "Rayabag Plant",
+    capacity: "49.3 MW",
+    location: "Rayabag in Belgaum District, Karnataka",
+    description: "The Govt. of Karnataka had allocated wind power project of 49.3 MW capacity at Rayabag in Belgaum District to M/s Bhoruka Power Corporation Ltd during 2012 49.3 MW wind farm comprising of 29 Units of 1.7 MW wind turbine generators were installed in Bastwad, Birnal, Byakud and Savasuddi villages near Raybag Taluk, Belgaum District and commissioned in stages starting from May 15,2014. The last wind turbine was commissioned on September 20, 2014.",
+    image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    id: "wind-2",
+    name: "Yelisirur Plant",
+    capacity: "78.9MW",
+    location: " Yelisirur village, Gadag Hobli-Taulk-District, Karnataka",
+    description: "The Govt. of Karnataka has allocated 78.9MW wind farm to Bhoruka Power Corporation Ltd during 2009 in Gadag District for development of wind farms under three phases.Under 1st phase 25.5MW wind farm comprising of 17units of 1.5MW wind turbine generators were installed in Yelisirur village, Gadag Hobli-Taulk-District and commissioned on 18.05.2012.",
+    image: "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    id: "wind-3",
+    name: "Jalsaimer Plant",
+    capacity: "30 MW",
+    location: "Baramsar Village, Jaisalmer District, Rajasthan",
+    description: "Work on the project started in February 2003. 5 Wind Energy Generators were erected, tested and commissioned in a record period of 50 days and the 6th unit was commissioned a month later.",
+    image: "https://images.unsplash.com/photo-1518178822001-c80d402ceec9?q=80&w=800&auto=format&fit=crop"
+  },
+   {
+    id: "wind-4",
+    name: "Chitradurga Plant",
+    capacity: "49.3 MW",
+    location: "Bettadanagenahalli, Chitradurga District, Karnataka",
+    description: "Work on the company's second Wind Power project started in January 2005.The 4 nos Wind Energy Generators were commissioned in March 2005 .",
+    image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=800&auto=format&fit=crop"
+  },
+   {
+    id: "wind-5",
+    name: "Nargund Plant",
+    capacity: "49.3 MW",
+    location: "Naragund, Gadag District, Karnataka",
+    description: "Work on the company’s third Wind Power project started in January 2005. The 9 nos Wind Energy Generators are commissioned on September 2007.",
+    image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=800&auto=format&fit=crop"
+  }
+];
