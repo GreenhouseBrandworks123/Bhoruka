@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
+import ScrollToTop from './components/common/ScrollToTop';
+
 
 // Page Imports
 import Home from "./pages/Home";
@@ -29,6 +31,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col bg-white text-slate-800 antialiased">
+        <ScrollToTop />
 
         {/* Global Navbar */}
         <Navbar />
