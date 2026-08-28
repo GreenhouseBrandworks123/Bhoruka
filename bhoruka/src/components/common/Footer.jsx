@@ -5,21 +5,22 @@ export default function Footer() {
   return (
     <footer className="bg-[#f4f6f8] text-[#17395f]">
 
-      {/* MAIN FOOTER */}
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 py-10">
+      {/* ================= MAIN FOOTER ================= */}
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 py-7">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-10 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-7 items-start">
 
           {/* ================= COMPANY ================= */}
           <div className="flex flex-col items-start">
+            <div className="w-[180px] h-[75px] flex items-center overflow-visible">
+              <img
+                src={logo}
+                alt="Bhoruka Power"
+                className="w-[180px] h-[180px] object-contain scale-[1.0] origin-left"
+              />
+            </div>
 
-            <img
-              src={logo}
-              alt="Bhoruka Power"
-              className="w-[190px] h-[110px] object-contain object-left"
-            />
-
-            <p className="mt-3 max-w-[300px] text-[#405a76] text-[17px] leading-7">
+            <p className="mt-3 max-w-[280px] text-[#405a76] text-[16px] leading-6">
               Powering a sustainable future through reliable Hydro, Wind and
               Solar energy.
             </p>
@@ -28,13 +29,13 @@ export default function Footer() {
 
 
           {/* ================= QUICK LINKS ================= */}
-          <div className="pt-1">
+          <div>
 
-            <h3 className="text-[22px] font-semibold leading-[110px] text-[#17395f] -mt-[40px] mb-[10px]">
+            <h3 className="text-[21px] font-semibold text-[#17395f] mb-4">
               Quick Links
             </h3>
 
-            <ul className="space-y-2 text-[17px]">
+            <ul className="space-y-2 text-[16px]">
 
               <li>
                 <a
@@ -73,17 +74,18 @@ export default function Footer() {
               </li>
 
             </ul>
+
           </div>
 
 
           {/* ================= OUR ENERGY ================= */}
-          <div className="pt-1">
+          <div>
 
-            <h3 className="text-[22px] font-semibold leading-[110px] text-[#17395f] -mt-[40px] mb-[10px]">
+            <h3 className="text-[21px] font-semibold text-[#17395f] mb-4">
               Our Energy
             </h3>
 
-            <ul className="space-y-2 text-[17px]">
+            <ul className="space-y-2 text-[16px]">
 
               <li>
                 <a
@@ -113,19 +115,22 @@ export default function Footer() {
               </li>
 
             </ul>
+
           </div>
 
 
           {/* ================= GET IN TOUCH ================= */}
-          <div className="pt-1">
+          <div>
 
-            <h3 className="text-[22px] font-semibold leading-[110px] text-[#17395f] -mt-[40px] mb-[10px]">
+            <h3 className="text-[21px] font-semibold text-[#17395f] mb-4">
               Get in Touch
             </h3>
 
-            <div className="space-y-2 text-[17px] text-[#405a76] leading-7">
+            <div className="space-y-2 text-[16px] text-[#405a76] leading-6">
 
-              <p>Bhoruka Power Corporation Limited</p>
+              <p>
+                Bhoruka Power Corporation Limited
+              </p>
 
               <p>
                 Sustainable Energy for a Better Tomorrow.
@@ -139,36 +144,38 @@ export default function Footer() {
               </a>
 
             </div>
+
           </div>
 
         </div>
+
       </div>
 
 
-      {/* BOTTOM FOOTER */}
+      {/* ================= BOTTOM FOOTER ================= */}
       <div className="border-t border-slate-300">
 
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 py-5">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 py-4">
 
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
 
-            <p className="text-[#526b86] text-[16px]">
+            <p className="text-[#526b86] text-[15px] text-center sm:text-left">
               © {new Date().getFullYear()} Bhoruka Power Corporation Limited.
               All Rights Reserved.
             </p>
 
-            <div className="flex gap-8 text-[16px]">
+            <div className="flex gap-6 text-[15px]">
 
               <a
                 href="/privacy-policy"
-                className="text-[#244d78] hover:text-[#0b2f57]"
+                className="text-[#244d78] hover:text-[#0b2f57] transition-colors"
               >
                 Privacy Policy
               </a>
 
               <a
                 href="/terms"
-                className="text-[#244d78] hover:text-[#0b2f57]"
+                className="text-[#244d78] hover:text-[#0b2f57] transition-colors"
               >
                 Terms & Conditions
               </a>
@@ -176,7 +183,9 @@ export default function Footer() {
             </div>
 
           </div>
+
         </div>
+
       </div>
 
     </footer>
