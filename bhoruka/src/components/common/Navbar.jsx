@@ -248,7 +248,7 @@ export default function Navbar() {
                 alt="Bhoruka Logo"
                 className="
                   h-20
-                  sm:h-24
+                  sm:h-30
                   max-w-[200px]
                   object-contain
                   transition-transform
