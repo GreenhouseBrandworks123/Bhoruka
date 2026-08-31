@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
-import ScrollToTop from './components/common/ScrollToTop';
-
+import ScrollToTop from "./components/common/ScrollToTop";
 
 // Page Imports
 import Home from "./pages/Home";
 import Windpower from "./pages/operations/WindPower";
 import HydroPower from "./pages/operations/HydroPower";
 import SolarPower from "./pages/operations/SolarPower";
+import Clients from "./pages/Clients";
 
 // Placeholder for unbuilt pages
 const PagePlaceholder = ({ title }) => (
@@ -31,6 +31,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col bg-white text-slate-800 antialiased">
+
         <ScrollToTop />
 
         {/* Global Navbar */}
@@ -40,14 +41,20 @@ function App() {
         <div className="flex-grow">
           <Routes>
 
+            {/* Home */}
             <Route path="/" element={<Home />} />
 
+            {/* Energy Pages */}
             <Route path="/wind" element={<Windpower />} />
 
             <Route path="/hydro" element={<HydroPower />} />
 
             <Route path="/solar" element={<SolarPower />} />
 
+            {/* Clients */}
+            <Route path="/clients" element={<Clients />} />
+
+            {/* CSR */}
             <Route
               path="/csr"
               element={
@@ -57,11 +64,13 @@ function App() {
               }
             />
 
+            {/* About */}
             <Route
               path="/about"
               element={<PagePlaceholder title="About Us" />}
             />
 
+            {/* Contact */}
             <Route
               path="/contact"
               element={<PagePlaceholder title="Contact Us" />}
@@ -70,7 +79,7 @@ function App() {
           </Routes>
         </div>
 
-       
+        {/* Global Footer */}
         <Footer />
 
       </div>
