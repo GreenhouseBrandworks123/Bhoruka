@@ -11,7 +11,7 @@ import Windpower from "./pages/operations/WindPower";
 import HydroPower from "./pages/operations/HydroPower";
 import SolarPower from "./pages/operations/SolarPower";
 import Clients from "./pages/Clients";
-
+import Marketing from "./pages/Marketing";
 // Placeholder for unbuilt pages
 const PagePlaceholder = ({ title }) => (
   <main className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -53,6 +53,8 @@ function App() {
 
             {/* Clients */}
             <Route path="/clients" element={<Clients />} />
+            
+            <Route path="/marketing" element={<Marketing />} />
 
             {/* CSR */}
             <Route
@@ -75,6 +77,7 @@ function App() {
               path="/contact"
               element={<PagePlaceholder title="Contact Us" />}
             />
+            
 
           </Routes>
         </div>
