@@ -285,10 +285,9 @@ export default function Navbar() {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${
-                      isActive
-                        ? 'text-[#0B4B94] font-semibold'
-                        : 'text-slate-700 hover:text-[#0B4B94]'
+                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${isActive
+                      ? 'text-[#0B4B94] font-semibold'
+                      : 'text-slate-700 hover:text-[#0B4B94]'
                     }`
                   }
                 >
@@ -309,10 +308,9 @@ export default function Navbar() {
                           duration-200
                           ease-out
                           origin-left
-                          ${
-                            isActive
-                              ? 'scale-x-100'
-                              : 'scale-x-0 group-hover:scale-x-100'
+                          ${isActive
+                            ? 'scale-x-100'
+                            : 'scale-x-0 group-hover:scale-x-100'
                           }
                         `}
                       />
@@ -342,38 +340,36 @@ export default function Navbar() {
 
               <li>
                 <NavLink
-                  to="/marketing"
+                  to="/about"
                   className={({ isActive }) =>
-                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${
-                      isActive
-                        ? 'text-[#0B4B94] font-semibold'
-                        : 'text-slate-700 hover:text-[#0B4B94]'
+                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${isActive
+                      ? 'text-[#0B4B94] font-semibold'
+                      : 'text-slate-700 hover:text-[#0B4B94]'
                     }`
                   }
                 >
                   {({ isActive }) => (
                     <>
-                      Marketing
+                      About Us
 
-                      <span
-                        className={`
-                          absolute
-                          bottom-0
-                          left-0
-                          w-full
-                          h-[2px]
-                          bg-[#0B4B94]
-                          rounded-full
-                          transition-transform
-                          duration-200
-                          ease-out
-                          origin-left
-                          ${
-                            isActive
-                              ? 'scale-x-100'
-                              : 'scale-x-0 group-hover:scale-x-100'
-                          }
-                        `}
+        <span
+            className={` 
+            absolute 
+            bottom-0 
+            left-0 
+            w-full 
+            h-[2px] 
+            bg-[#0B4B94] 
+            rounded-full 
+            transition-transform 
+            duration-200 
+            ease-out 
+            origin-left 
+            ${isActive
+                            ? 'scale-x-100'
+                            : 'scale-x-0 group-hover:scale-x-100'
+                          } 
+          `}
                       />
                     </>
                   )}
@@ -387,10 +383,9 @@ export default function Navbar() {
                 <NavLink
                   to="/clients"
                   className={({ isActive }) =>
-                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${
-                      isActive
-                        ? 'text-[#0B4B94] font-semibold'
-                        : 'text-slate-700 hover:text-[#0B4B94]'
+                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${isActive
+                      ? 'text-[#0B4B94] font-semibold'
+                      : 'text-slate-700 hover:text-[#0B4B94]'
                     }`
                   }
                 >
@@ -411,10 +406,9 @@ export default function Navbar() {
                           duration-200
                           ease-out
                           origin-left
-                          ${
-                            isActive
-                              ? 'scale-x-100'
-                              : 'scale-x-0 group-hover:scale-x-100'
+                          ${isActive
+                            ? 'scale-x-100'
+                            : 'scale-x-0 group-hover:scale-x-100'
                           }
                         `}
                       />
@@ -430,10 +424,9 @@ export default function Navbar() {
                 <NavLink
                   to="/csr"
                   className={({ isActive }) =>
-                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${
-                      isActive
-                        ? 'text-[#0B4B94] font-semibold'
-                        : 'text-slate-700 hover:text-[#0B4B94]'
+                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${isActive
+                      ? 'text-[#0B4B94] font-semibold'
+                      : 'text-slate-700 hover:text-[#0B4B94]'
                     }`
                   }
                 >
@@ -454,10 +447,9 @@ export default function Navbar() {
                           duration-200
                           ease-out
                           origin-left
-                          ${
-                            isActive
-                              ? 'scale-x-100'
-                              : 'scale-x-0 group-hover:scale-x-100'
+                          ${isActive
+                            ? 'scale-x-100'
+                            : 'scale-x-0 group-hover:scale-x-100'
                           }
                         `}
                       />
@@ -481,10 +473,9 @@ export default function Navbar() {
                 <NavLink
                   to="/jobs"
                   className={({ isActive }) =>
-                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${
-                      isActive
-                        ? 'text-[#0B4B94] font-semibold'
-                        : 'text-slate-700 hover:text-[#0B4B94]'
+                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${isActive
+                      ? 'text-[#0B4B94] font-semibold'
+                      : 'text-slate-700 hover:text-[#0B4B94]'
                     }`
                   }
                 >
@@ -505,10 +496,9 @@ export default function Navbar() {
                           duration-200
                           ease-out
                           origin-left
-                          ${
-                            isActive
-                              ? 'scale-x-100'
-                              : 'scale-x-0 group-hover:scale-x-100'
+                          ${isActive
+                            ? 'scale-x-100'
+                            : 'scale-x-0 group-hover:scale-x-100'
                           }
                         `}
                       />
@@ -655,10 +645,9 @@ export default function Navbar() {
           bg-white
           border-b
           border-slate-100
-          ${
-            isMobileMenuOpen
-              ? 'max-h-[1000px] opacity-100'
-              : 'max-h-0 opacity-0 pointer-events-none'
+          ${isMobileMenuOpen
+            ? 'max-h-[1000px] opacity-100'
+            : 'max-h-0 opacity-0 pointer-events-none'
           }
         `}
       >
@@ -675,10 +664,9 @@ export default function Navbar() {
                 to="/"
                 onClick={closeMobileMenu}
                 className={({ isActive }) =>
-                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${
-                    isActive
-                      ? 'bg-blue-50 text-[#0B4B94] font-semibold'
-                      : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
+                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${isActive
+                    ? 'bg-blue-50 text-[#0B4B94] font-semibold'
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
                   }`
                 }
               >
@@ -719,10 +707,9 @@ export default function Navbar() {
                     h-4
                     transition-transform
                     duration-200
-                    ${
-                      mobileDropdown === 'company'
-                        ? 'rotate-180'
-                        : ''
+                    ${mobileDropdown === 'company'
+                      ? 'rotate-180'
+                      : ''
                     }
                   `}
                   fill="none"
@@ -802,10 +789,9 @@ export default function Navbar() {
                     h-4
                     transition-transform
                     duration-200
-                    ${
-                      mobileDropdown === 'projects'
-                        ? 'rotate-180'
-                        : ''
+                    ${mobileDropdown === 'projects'
+                      ? 'rotate-180'
+                      : ''
                     }
                   `}
                   fill="none"
@@ -862,10 +848,9 @@ export default function Navbar() {
                 to="/marketing"
                 onClick={closeMobileMenu}
                 className={({ isActive }) =>
-                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${
-                    isActive
-                      ? 'bg-blue-50 text-[#0B4B94] font-semibold'
-                      : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
+                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${isActive
+                    ? 'bg-blue-50 text-[#0B4B94] font-semibold'
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
                   }`
                 }
               >
@@ -883,10 +868,9 @@ export default function Navbar() {
                 to="/clients"
                 onClick={closeMobileMenu}
                 className={({ isActive }) =>
-                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${
-                    isActive
-                      ? 'bg-blue-50 text-[#0B4B94] font-semibold'
-                      : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
+                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${isActive
+                    ? 'bg-blue-50 text-[#0B4B94] font-semibold'
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
                   }`
                 }
               >
@@ -904,10 +888,9 @@ export default function Navbar() {
                 to="/csr"
                 onClick={closeMobileMenu}
                 className={({ isActive }) =>
-                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${
-                    isActive
-                      ? 'bg-blue-50 text-[#0B4B94] font-semibold'
-                      : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
+                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${isActive
+                    ? 'bg-blue-50 text-[#0B4B94] font-semibold'
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
                   }`
                 }
               >
@@ -948,10 +931,9 @@ export default function Navbar() {
                     h-4
                     transition-transform
                     duration-200
-                    ${
-                      mobileDropdown === 'press'
-                        ? 'rotate-180'
-                        : ''
+                    ${mobileDropdown === 'press'
+                      ? 'rotate-180'
+                      : ''
                     }
                   `}
                   fill="none"
@@ -1008,10 +990,9 @@ export default function Navbar() {
                 to="/jobs"
                 onClick={closeMobileMenu}
                 className={({ isActive }) =>
-                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${
-                    isActive
-                      ? 'bg-blue-50 text-[#0B4B94] font-semibold'
-                      : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
+                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${isActive
+                    ? 'bg-blue-50 text-[#0B4B94] font-semibold'
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
                   }`
                 }
               >
