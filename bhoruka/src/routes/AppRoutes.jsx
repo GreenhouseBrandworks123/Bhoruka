@@ -9,6 +9,7 @@ const WindPower = lazy(() => import('../pages/operations/WindPower'));
 const Marketing = lazy(()=> import('../pages/Marketing'))
 const Clients = lazy(()=> import('../pages/Clients'))
 const CorporateOverview = lazy(() => import('../pages/company/CorporateOverview'));
+const Leadership = lazy(() => import('../pages/company/Leadership'));
 
 const AppRoutes = () => {
   return (
@@ -21,6 +22,7 @@ const AppRoutes = () => {
         <Route path="/company/corporate-overview" element={<CorporateOverview />} />
         <Route path="/marketing" element= {<Marketing/>}/>
         <Route path="clients" element = {<Clients/>}/>
+        <Route path="/company/leadership" element={<Leadership />} />
       </Routes>
     </Suspense>
   );
