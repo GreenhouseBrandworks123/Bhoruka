@@ -403,303 +403,186 @@ export default function AboutUs() {
           OUR APPROACH
       ========================================================= */}
 
-      <section className="bg-[#082f57] py-20 lg:py-24">
+     {/* =========================================================
+    OUR APPROACH
+========================================================= */}
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+<section className="bg-white py-12 lg:py-16">
 
-          <div className="grid lg:grid-cols-2 gap-14 items-center">
+  <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-            <div>
+    <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
 
-              <p className="text-sm uppercase tracking-[0.2em] font-semibold text-blue-300">
-                Our Approach
-              </p>
+      {/* LEFT CONTENT */}
+      <div className="max-w-xl">
 
-              <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-white leading-tight">
-                Building long-term value through responsible energy.
-              </h2>
+        <p className="text-sm uppercase tracking-[0.2em] font-semibold text-[#0B4B94] mb-4">
+          Our Approach
+        </p>
 
-              <p className="mt-6 text-lg leading-8 text-blue-100/80">
-                Our approach combines technical excellence with
-                environmental responsibility, safety and a commitment
-                to the communities around our projects.
-              </p>
+        <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#17395f] leading-[1.15] tracking-tight">
+          Building long-term value through responsible energy.
+        </h2>
 
-              <Link
-                to="/company/vision-values-quality-policy"
-                className="inline-flex items-center mt-8 px-6 py-3 rounded-lg bg-white text-[#0B4B94] font-semibold hover:bg-blue-50 transition"
-              >
-                Our Vision & Values
-              </Link>
+        <p className="mt-6 text-base sm:text-lg text-[#4b6b8a] leading-8 max-w-lg">
+          Our approach combines technical excellence with environmental
+          responsibility, safety and a commitment to the communities around
+          our projects.
+        </p>
 
-            </div>
+        <Link
+          to="/company/vision-values-quality-policy"
+          className="inline-flex items-center justify-center mt-8 px-6 py-3.5 rounded-lg bg-[#0B4B94] text-white font-semibold hover:bg-[#083b75] transition"
+        >
+          Our Vision & Values
+        </Link>
 
-
-            <div className="grid sm:grid-cols-2 gap-5">
-
-              {/* CARD 1 */}
-              <div className="p-6 rounded-2xl bg-white/10 border border-white/10 backdrop-blur-sm">
-
-                <div className="w-11 h-11 rounded-xl bg-blue-400/20 flex items-center justify-center text-blue-200 mb-5">
-
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 3v18M3 12h18M5.5 5.5l13 13M18.5 5.5l-13 13"
-                    />
-                  </svg>
-
-                </div>
-
-                <h3 className="text-xl font-semibold text-white">
-                  Innovation
-                </h3>
-
-                <p className="mt-3 text-blue-100/70 leading-7">
-                  Embracing technology and better ways of delivering
-                  renewable energy solutions.
-                </p>
-
-              </div>
+      </div>
 
 
-              {/* CARD 2 */}
-              <div className="p-6 rounded-2xl bg-white/10 border border-white/10 backdrop-blur-sm">
 
-                <div className="w-11 h-11 rounded-xl bg-blue-400/20 flex items-center justify-center text-blue-200 mb-5">
+      {/* RIGHT CARDS */}
+      <div className="grid sm:grid-cols-2 gap-5">
 
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"
-                    />
-                  </svg>
+        {/* CARD 1 */}
+        <div className="p-6 rounded-2xl bg-[#f5f9fd] border border-[#d9e6f2] shadow-sm hover:shadow-md transition">
 
-                </div>
+          <div className="w-11 h-11 rounded-xl bg-[#0B4B94] flex items-center justify-center text-white mb-5 shadow-sm">
 
-                <h3 className="text-xl font-semibold text-white">
-                  Safety
-                </h3>
-
-                <p className="mt-3 text-blue-100/70 leading-7">
-                  Keeping safe operations and healthy workplaces at the
-                  heart of our projects.
-                </p>
-
-              </div>
-
-
-              {/* CARD 3 */}
-              <div className="p-6 rounded-2xl bg-white/10 border border-white/10 backdrop-blur-sm">
-
-                <div className="w-11 h-11 rounded-xl bg-blue-400/20 flex items-center justify-center text-blue-200 mb-5">
-
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 19h16M6 16V8m6 8V5m6 11v-5"
-                    />
-                  </svg>
-
-                </div>
-
-                <h3 className="text-xl font-semibold text-white">
-                  Excellence
-                </h3>
-
-                <p className="mt-3 text-blue-100/70 leading-7">
-                  Developing engineering and project-management
-                  capabilities for dependable performance.
-                </p>
-
-              </div>
-
-
-              {/* CARD 4 */}
-              <div className="p-6 rounded-2xl bg-white/10 border border-white/10 backdrop-blur-sm">
-
-                <div className="w-11 h-11 rounded-xl bg-blue-400/20 flex items-center justify-center text-blue-200 mb-5">
-
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 21s8-4.5 8-10V5l-8-3-8 3v6c0 5.5 8 10 8 10z"
-                    />
-                  </svg>
-
-                </div>
-
-                <h3 className="text-xl font-semibold text-white">
-                  Sustainability
-                </h3>
-
-                <p className="mt-3 text-blue-100/70 leading-7">
-                  Creating value while caring for the environment and
-                  communities where we operate.
-                </p>
-
-              </div>
-
-            </div>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="1.8"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 3v18M3 12h18M5.5 5.5l13 13M18.5 5.5l-13 13"
+              />
+            </svg>
 
           </div>
+
+          <h3 className="text-xl font-semibold text-[#17395f]">
+            Innovation
+          </h3>
+
+          <p className="mt-3 text-[#4b6b8a] leading-7">
+            Embracing technology and better ways of delivering
+            renewable energy solutions.
+          </p>
 
         </div>
 
-      </section>
 
+        {/* CARD 2 */}
+        <div className="p-6 rounded-2xl bg-[#f5f9fd] border border-[#d9e6f2] shadow-sm hover:shadow-md transition">
 
-      {/* =========================================================
-          COMPANY JOURNEY
-      ========================================================= */}
+          <div className="w-11 h-11 rounded-xl bg-[#0B4B94] flex items-center justify-center text-white mb-5 shadow-sm">
 
-      <section className="py-20 lg:py-24">
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-
-          <div className="text-center max-w-3xl mx-auto">
-
-            <p className="text-sm uppercase tracking-[0.2em] font-semibold text-[#0B4B94]">
-              Our Journey
-            </p>
-
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[#17395f]">
-              From early renewable projects to a diversified energy portfolio.
-            </h2>
-
-            <p className="mt-5 text-lg leading-8 text-slate-600">
-              Bhoruka Power's journey has been shaped by early investment
-              in renewable energy and continued expansion of its technical
-              and operational capabilities.
-            </p>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="1.8"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"
+              />
+            </svg>
 
           </div>
 
+          <h3 className="text-xl font-semibold text-[#17395f]">
+            Safety
+          </h3>
 
-          <div className="relative mt-16">
-
-            {/* Timeline line */}
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-slate-200 -translate-x-1/2" />
-
-            <div className="space-y-14">
-
-              {/* 1986 */}
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-
-                <div className="md:text-right">
-
-                  <p className="text-3xl font-bold text-[#0B4B94]">
-                    1986
-                  </p>
-
-                  <h3 className="mt-2 text-xl font-semibold text-[#17395f]">
-                    Bhoruka Power begins its journey
-                  </h3>
-
-                  <p className="mt-3 text-slate-600 leading-7">
-                    The company was established with a focus on the
-                    evolving Indian power sector.
-                  </p>
-
-                </div>
-
-                <div className="hidden md:flex justify-center">
-                  <div className="w-4 h-4 rounded-full bg-[#0B4B94] ring-8 ring-blue-50" />
-                </div>
-
-              </div>
-
-
-              {/* 1990s */}
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-
-                <div className="hidden md:flex justify-center">
-                  <div className="w-4 h-4 rounded-full bg-[#0B4B94] ring-8 ring-blue-50" />
-                </div>
-
-                <div>
-
-                  <p className="text-3xl font-bold text-[#0B4B94]">
-                    1990s
-                  </p>
-
-                  <h3 className="mt-2 text-xl font-semibold text-[#17395f]">
-                    Early leadership in small hydro
-                  </h3>
-
-                  <p className="mt-3 text-slate-600 leading-7">
-                    Bhoruka pursued opportunities in small hydro when
-                    the segment was still emerging in India.
-                  </p>
-
-                </div>
-
-              </div>
-
-
-              {/* Expansion */}
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-
-                <div className="md:text-right">
-
-                  <p className="text-3xl font-bold text-[#0B4B94]">
-                    Expansion
-                  </p>
-
-                  <h3 className="mt-2 text-xl font-semibold text-[#17395f]">
-                    Growing renewable capabilities
-                  </h3>
-
-                  <p className="mt-3 text-slate-600 leading-7">
-                    The company expanded its renewable portfolio across
-                    hydro, wind and solar energy.
-                  </p>
-
-                </div>
-
-                <div className="hidden md:flex justify-center">
-                  <div className="w-4 h-4 rounded-full bg-[#0B4B94] ring-8 ring-blue-50" />
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
+          <p className="mt-3 text-[#4b6b8a] leading-7">
+            Keeping safe operations and healthy workplaces at the
+            heart of our projects.
+          </p>
 
         </div>
 
-      </section>
+
+        {/* CARD 3 */}
+        <div className="p-6 rounded-2xl bg-[#f5f9fd] border border-[#d9e6f2] shadow-sm hover:shadow-md transition">
+
+          <div className="w-11 h-11 rounded-xl bg-[#0B4B94] flex items-center justify-center text-white mb-5 shadow-sm">
+
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="1.8"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 19h16M6 16V8m6 8V5m6 11v-5"
+              />
+            </svg>
+
+          </div>
+
+          <h3 className="text-xl font-semibold text-[#17395f]">
+            Excellence
+          </h3>
+
+          <p className="mt-3 text-[#4b6b8a] leading-7">
+            Developing engineering and project-management
+            capabilities for dependable performance.
+          </p>
+
+        </div>
 
 
+        {/* CARD 4 */}
+        <div className="p-6 rounded-2xl bg-[#f5f9fd] border border-[#d9e6f2] shadow-sm hover:shadow-md transition">
+
+          <div className="w-11 h-11 rounded-xl bg-[#0B4B94] flex items-center justify-center text-white mb-5 shadow-sm">
+
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="1.8"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 21s8-4.5 8-10V5l-8-3-8 3v6c0 5.5 8 10 8 10z"
+              />
+            </svg>
+
+          </div>
+
+          <h3 className="text-xl font-semibold text-[#17395f]">
+            Sustainability
+          </h3>
+
+          <p className="mt-3 text-[#4b6b8a] leading-7">
+            Creating value while caring for the environment and
+            communities where we operate.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+      
       {/* =========================================================
           PEOPLE + LEADERSHIP
       ========================================================= */}
