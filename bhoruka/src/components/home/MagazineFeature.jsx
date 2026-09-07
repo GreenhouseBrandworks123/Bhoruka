@@ -1,7 +1,7 @@
 import React from 'react';
 
 // You can swap this with any relevant image for the "Cover" of your magazine
-import coverImage from '../../assets/wind-imges/wind-bg.jpeg'; 
+import coverImage from '../../assets/images/magzine.png';
 
 const MagazineFeature = () => {
   return (
@@ -79,19 +79,20 @@ const MagazineFeature = () => {
 
             {/* Call to Action Buttons */}
             <div className="flex flex-wrap items-center gap-4">
-              <button className="group inline-flex items-center justify-center px-8 py-4 bg-[#0a4275] text-white text-sm font-bold uppercase tracking-widest hover:bg-blue-700 transition-all duration-300 rounded-sm shadow-md hover:shadow-xl">
-                <span>Read Latest Issue</span>
-                <svg className="w-5 h-5 ml-3 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                </svg>
-              </button>
+              {/* READ LATEST ISSUE: Opens in a new tab */}
+            
 
-              <button className="group inline-flex items-center justify-center px-8 py-4 bg-white border border-slate-200 text-slate-600 text-sm font-bold uppercase tracking-widest hover:border-[#0a4275] hover:text-[#0a4275] transition-all duration-300 rounded-sm shadow-sm">
+              {/* DOWNLOAD PDF: Forces direct download */}
+              <a 
+                href="/documents/green-power.pdf" 
+                download="Green_Power_Magazine_BPCL.pdf"
+                className="group inline-flex items-center justify-center px-8 py-4 bg-white border border-slate-200 text-slate-600 text-sm font-bold uppercase tracking-widest hover:border-[#0a4275] hover:text-[#0a4275] transition-all duration-300 rounded-sm shadow-sm"
+              >
                 <svg className="w-5 h-5 mr-3 transform group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
                 <span>Download PDF</span>
-              </button>
+              </a>
             </div>
 
           </div>
