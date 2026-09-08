@@ -20,6 +20,7 @@ const MissionStatement = lazy(() => import('../pages/company/MissionStatement'))
 const VisionValuesQuality = lazy(() => import('../pages/company/VisionValuesQuality'));
 const People = lazy(() => import('../pages/company/People'));
 const AwardsAchievements = lazy(() => import('../pages/company/AwardsAchievements'));
+const SafetyEnvironment = lazy(() => import('../pages/company/SafetyEnvironment'));
 
 /* ================= CSR PAGES ================= */
 const CSRPhilosophy = lazy(() => import('../pages/csr/CSRPhilosophy'));
@@ -53,6 +54,7 @@ const AppRoutes = () => {
         <Route path="/company/vision-values-quality-policy" element={<VisionValuesQuality />} />
         <Route path="/company/people" element={<People />} />
         <Route path="/company/awards-achievements" element={<AwardsAchievements />} />
+        <Route path="/company/safety-environment" element={<SafetyEnvironment />} />
 
         {/* ================= CSR ================= */}
         <Route path="/csr" element={<Sustainability />} />
