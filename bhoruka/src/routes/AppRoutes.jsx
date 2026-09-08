@@ -19,17 +19,8 @@ const Leadership = lazy(() => import('../pages/company/Leadership'));
 const MissionStatement = lazy(() => import('../pages/company/MissionStatement'));
 const VisionValuesQuality = lazy(() => import('../pages/company/VisionValuesQuality'));
 const People = lazy(() => import('../pages/company/People'));
+const AwardsAchievements = lazy(() => import('../pages/company/AwardsAchievements'));
 
-/* ================= CSR PAGES ================= */
-const CSRPhilosophy = lazy(() => import('../pages/csr/CSRPhilosophy'));
-const CSRImpact = lazy(() => import('../pages/csr/CSRImpact'));
-const CSREducation = lazy(() => import('../pages/csr/CSREducation'));
-const CSRCommunity = lazy(() => import('../pages/csr/CSRCommunity'));
-const CSRWomenEmpowerment = lazy(() => import('../pages/csr/CSRWomenEmpowerment'));
-const CSRHealthEnvironment = lazy(() => import('../pages/csr/CSRHealthEnvironment'));
-const CSRSkillDevelopment = lazy(() => import('../pages/csr/CSRSkillDevelopment'));
-const CSRMicroCredit = lazy(() => import('../pages/csr/CSRMicroCredit'));
-const CSRGallery = lazy(() => import('../pages/csr/CSRGallery'));
 
 const AppRoutes = () => {
   return (
@@ -51,18 +42,7 @@ const AppRoutes = () => {
         <Route path="/company/mission-statement" element={<MissionStatement />} />
         <Route path="/company/vision-values-quality-policy" element={<VisionValuesQuality />} />
         <Route path="/company/people" element={<People />} />
-
-        {/* ================= CSR ================= */}
-        <Route path="/csr" element={<Sustainability />} />
-        <Route path="/csr/philosophy" element={<CSRPhilosophy />} />
-        <Route path="/csr/impact" element={<CSRImpact />} />
-        <Route path="/csr/education" element={<CSREducation />} />
-        <Route path="/csr/community" element={<CSRCommunity />} />
-        <Route path="/csr/women-empowerment" element={<CSRWomenEmpowerment />} />
-        <Route path="/csr/health-environment" element={<CSRHealthEnvironment />} />
-        <Route path="/csr/skill-development" element={<CSRSkillDevelopment />} />
-        <Route path="/csr/micro-credit" element={<CSRMicroCredit />} />
-        <Route path="/csr/gallery" element={<CSRGallery />} />
+        <Route path="/company/awards-achievements" element={<AwardsAchievements />} />
       </Routes>
     </Suspense>
   );
