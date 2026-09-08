@@ -12,6 +12,7 @@ const Leadership = lazy(() => import('../pages/company/Leadership'));
 const AboutUs = lazy(()=> import('../pages/AboutUs') )
 const MissionStatement = lazy(() => import('../pages/company/MissionStatement'));
 const VisionValuesQuality = lazy(() => import('../pages/company/VisionValuesQuality'));
+const People = lazy(() => import('../pages/company/People'));
 
 const AppRoutes = () => {
   return (
@@ -27,6 +28,7 @@ const AppRoutes = () => {
         <Route path="about" element = {<AboutUs/>}/>
         <Route path="/company/mission-statement" element={<MissionStatement />} />
         <Route path="/company/vision-values-quality-policy" element={<VisionValuesQuality />} />
+        <Route path="/company/people" element={<People />} />
       </Routes>
     </Suspense>
   );
