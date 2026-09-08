@@ -39,7 +39,7 @@ export default function AboutUs() {
             </span>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Powering Progress.
+              Powering Progress
               <span className="block text-blue-200">
                 Responsibly.
               </span>
@@ -53,7 +53,7 @@ export default function AboutUs() {
             <div className="mt-8 flex flex-wrap gap-4">
 
               <Link
-                to="/projects"
+                to="/hydro"
                 className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-white text-[#0B4B94] font-semibold hover:bg-blue-50 transition"
               >
                 Explore Our Projects
@@ -398,12 +398,7 @@ export default function AboutUs() {
 
       </section>
 
-
-      {/* =========================================================
-          OUR APPROACH
-      ========================================================= */}
-
-     {/* =========================================================
+ {/* =========================================================
     OUR APPROACH
 ========================================================= */}
 
@@ -676,7 +671,7 @@ export default function AboutUs() {
             </div>
 
             <Link
-              to="/projects"
+              to="/hydro"
               className="text-[#0B4B94] font-semibold whitespace-nowrap"
             >
               View all projects →
