@@ -74,15 +74,11 @@ const pressMediaItems = [
 const csrItems = [
   {
     name: 'CSR Overview',
-    path: '/csr',
+    path: '/csr-overview',
   },
   {
-    name: 'Our CSR Philosophy',
-    path: '/csr/philosophy',
-  },
-  {
-    name: 'Our Impact at a Glance',
-    path: '/csr/impact',
+    name: 'Organisation',
+    path: '/csr/Organisation',
   },
   {
     name: 'Education',
@@ -93,25 +89,29 @@ const csrItems = [
     path: '/csr/community',
   },
   {
-    name: 'Women Empowerment',
-    path: '/csr/women-empowerment',
-  },
-  {
     name: 'Health & Environment',
     path: '/csr/health-environment',
   },
   {
-    name: 'Skill Development',
-    path: '/csr/skill-development',
-  },
-  {
-    name: 'Micro-Credit & Livelihood',
-    path: '/csr/micro-credit',
+    name: 'Fact Sheet',
+    path: '/csr/fact-sheet',
   },
   {
     name: 'CSR Gallery',
     path: '/csr/gallery',
   },
+  {
+    name: 'News & Events',
+    path: '/csr/news-events',
+  },
+  {
+    name: 'Newsletters',
+    path: '/csr/newsletters',
+  },
+  {
+    name: 'Contact Us (CSR)',
+    path: '/csr/contacts',
+  }
 ];
 
 /* ================= DROPDOWN COMPONENT ================= */
