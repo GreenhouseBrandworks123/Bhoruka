@@ -23,15 +23,7 @@ const AwardsAchievements = lazy(() => import('../pages/company/AwardsAchievement
 const SafetyEnvironment = lazy(() => import('../pages/company/SafetyEnvironment'));
 
 /* ================= CSR PAGES ================= */
-const CSRPhilosophy = lazy(() => import('../pages/csr/CSRPhilosophy'));
-const CSRImpact = lazy(() => import('../pages/csr/CSRImpact'));
-const CSREducation = lazy(() => import('../pages/csr/CSREducation'));
-const CSRCommunity = lazy(() => import('../pages/csr/CSRCommunity'));
-const CSRWomenEmpowerment = lazy(() => import('../pages/csr/CSRWomenEmpowerment'));
-const CSRHealthEnvironment = lazy(() => import('../pages/csr/CSRHealthEnvironment'));
-const CSRSkillDevelopment = lazy(() => import('../pages/csr/CSRSkillDevelopment'));
-const CSRMicroCredit = lazy(() => import('../pages/csr/CSRMicroCredit'));
-const CSRGallery = lazy(() => import('../pages/csr/CSRGallery'));
+const CSROverview = lazy(() => import('../pages/csr/CSROverview'));
 
 const AppRoutes = () => {
   return (
@@ -57,16 +49,7 @@ const AppRoutes = () => {
         <Route path="/company/safety-environment" element={<SafetyEnvironment />} />
 
         {/* ================= CSR ================= */}
-        <Route path="/csr" element={<Sustainability />} />
-        <Route path="/csr/philosophy" element={<CSRPhilosophy />} />
-        <Route path="/csr/impact" element={<CSRImpact />} />
-        <Route path="/csr/education" element={<CSREducation />} />
-        <Route path="/csr/community" element={<CSRCommunity />} />
-        <Route path="/csr/women-empowerment" element={<CSRWomenEmpowerment />} />
-        <Route path="/csr/health-environment" element={<CSRHealthEnvironment />} />
-        <Route path="/csr/skill-development" element={<CSRSkillDevelopment />} />
-        <Route path="/csr/micro-credit" element={<CSRMicroCredit />} />
-        <Route path="/csr/gallery" element={<CSRGallery />} />
+        <Route path="/csr-overview" element={<CSROverview />} />
       </Routes>
     </Suspense>
   );
