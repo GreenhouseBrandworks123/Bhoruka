@@ -10,9 +10,8 @@ const CorePillarsOverview = lazy(() => import('./overview-sections/CorePillarsOv
 const OrganisationOverview = lazy(() => import('./overview-sections/OrganisationOverview'));
 const FactSheetOverview = lazy(() => import('./overview-sections/FactSheetOverview'));
 const GalleryOverview = lazy(() => import('./overview-sections/GalleryOverview'));
-const NewsEventsOverview = lazy(() => import('./overview-sections/NewsEventsOverview'));
 const NewslettersOverview = lazy(() => import('./overview-sections/NewslettersOverview'));
-const ContactOverview = lazy(() => import('./overview-sections/ContactOverview'));
+
 
 const SectionLoader = () => (
   <div className="w-full flex justify-center py-12">
@@ -37,9 +36,7 @@ export default function CSROverview() {
           <OrganisationOverview />
           <FactSheetOverview />
           <GalleryOverview />
-          <NewsEventsOverview />
           <NewslettersOverview />
-          <ContactOverview />
           
         </Suspense>
       </div>
