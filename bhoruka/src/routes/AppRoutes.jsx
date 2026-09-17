@@ -24,6 +24,7 @@ const SafetyEnvironment = lazy(() => import('../pages/company/SafetyEnvironment'
 
 /* ================= CSR PAGES ================= */
 const CSROverview = lazy(() => import('../pages/csr/CSROverview'));
+const CsrOrganization = lazy(()=>import('../pages/csr/CsrOrganization'));
 
 const AppRoutes = () => {
   return (
@@ -50,6 +51,7 @@ const AppRoutes = () => {
 
         {/* ================= CSR ================= */}
         <Route path="/csr-overview" element={<CSROverview />} />
+        <Route path="/csr-organization" element={<CsrOrganization/>}/>
       </Routes>
     </Suspense>
   );

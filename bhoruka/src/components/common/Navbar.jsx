@@ -78,7 +78,7 @@ const csrItems = [
   },
   {
     name: 'Organisation',
-    path: '/csr/Organisation',
+    path: '/csr-organization',
   },
   {
     name: 'Education',
