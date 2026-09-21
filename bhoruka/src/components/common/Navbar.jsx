@@ -105,10 +105,6 @@ const csrItems = [
     path: '/csr/news-events',
   },
   {
-    name: 'Newsletters',
-    path: '/csr/newsletters',
-  },
-  {
     name: 'Contact Us (CSR)',
     path: '/csr/contacts',
   }
