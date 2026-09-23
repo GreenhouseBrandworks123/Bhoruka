@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Award } from 'lucide-react';
 import { csrOrganizationData } from '../../data/csrOrganizationData';
 import orgChartImage from '../../assets/images/orgChartImage.jpg';
@@ -7,8 +8,32 @@ export default function CsrOrganization({ data = csrOrganizationData }) {
   return (
     <div className="w-full bg-white font-sans text-slate-900 selection:bg-[#0B4B94] selection:text-white">
 
-      {/* 1. ABOUT SECTION (Architectural Overlap) */}
-      <section className="w-full bg-slate-50 py-20 lg:py-32 relative">
+      {/* --- NEW PAGE HEADER (Removed bottom padding) --- */}
+      <section className="w-full pt-28 lg:pt-36 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          
+          {/* Breadcrumb / Eyebrow */}
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-[2px] bg-[#0B4B94]"></div>
+            <Link to="/csr" className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 hover:text-[#0B4B94] transition-colors">
+              Corporate Social Responsibility
+            </Link>
+            <span className="text-xs font-bold text-slate-400">/</span>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0B4B94]">
+              Organization
+            </span>
+          </div>
+          
+          {/* Main Page Title */}
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-slate-900 tracking-tight uppercase">
+            Organization
+          </h1>
+          
+        </div>
+      </section>
+
+      {/* 1. ABOUT SECTION (Changed py-32 to pt-8 pb-32 to kill the gap) */}
+      <section className="w-full bg-slate-50 pt-8 lg:pt-10 pb-20 lg:pb-32 relative">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex flex-col lg:flex-row items-center">
 
@@ -68,7 +93,6 @@ export default function CsrOrganization({ data = csrOrganizationData }) {
             </div>
             
             <div className="lg:w-5/12">
-              {/* INCREASED: text-lg -> text-xl */}
               <p className="text-xl font-medium text-slate-600 leading-relaxed">
                 {data.objectives.description}
               </p>
@@ -92,12 +116,10 @@ export default function CsrOrganization({ data = csrOrganizationData }) {
                   {/* Horizontal Accent Line */}
                   <div className="w-12 h-1 bg-[#0B4B94] group-hover:bg-white transition-colors duration-500 mb-8"></div>
                   
-                  {/* INCREASED: text-2xl -> text-3xl */}
                   <h3 className="text-3xl font-extrabold text-slate-900 group-hover:text-white uppercase tracking-wide mb-6 transition-colors duration-500">
                     {objective.highlight}
                   </h3>
                   
-                  {/* INCREASED: added text-lg */}
                   <p className="text-lg text-slate-600 group-hover:text-blue-50 leading-relaxed transition-colors duration-500">
                     {objective.text}
                   </p>
@@ -112,7 +134,6 @@ export default function CsrOrganization({ data = csrOrganizationData }) {
         </div>
       </section>
 
-      {/* 3. STRATEGY & REACH (Deep Contrast Box) */}
       {/* 3. COMBINED STRATEGY & GOVERNANCE MASTER SECTION */}
       <section className="w-full bg-white py-20 lg:py-32 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-20 lg:gap-32">
@@ -198,7 +219,7 @@ export default function CsrOrganization({ data = csrOrganizationData }) {
                   </p>
                </div>
 
-               {/* Awards Highlight Box (Integrated into the bottom of the card) */}
+               {/* Awards Highlight Box */}
                <div className="bg-[#0B4B94] p-10 lg:p-12 flex items-center gap-6 relative overflow-hidden">
                   <Award className="absolute -bottom-6 -right-6 w-40 h-40 text-white opacity-5" />
                   <Award className="w-12 h-12 text-white flex-shrink-0 relative z-10" />
