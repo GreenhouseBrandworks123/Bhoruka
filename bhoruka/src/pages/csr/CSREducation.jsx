@@ -175,7 +175,7 @@ export default function CSREducation() {
       {/* 4. RETURN CTA */}
       <section className="w-full py-16 bg-slate-900 flex justify-center border-t border-slate-800">
         <Link 
-          to="/csr" 
+          to="/csr-overview" 
           className="group inline-flex items-center justify-center px-10 py-4 text-xs font-bold text-slate-900 bg-white hover:bg-[#0B4B94] hover:text-white transition-all duration-300 uppercase tracking-widest shadow-sm"
         >
           <svg className="w-4 h-4 mr-3 transform group-hover:-translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
