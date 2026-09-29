@@ -96,18 +96,11 @@ const csrItems = [
     name: 'Fact Sheet',
     path: '/csr/fact-sheet',
   },
-  {
-    name: 'CSR Gallery',
-    path: '/csr/gallery',
-  },
+  
   {
     name: 'News & Events',
     path: '/csr/news-events',
   },
-  {
-    name: 'Contact Us (CSR)',
-    path: '/csr/contacts',
-  }
 ];
 
 /* ================= DROPDOWN COMPONENT ================= */
