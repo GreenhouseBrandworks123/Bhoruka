@@ -33,10 +33,7 @@ const companyItems = [
     name: 'Safety & Environment',
     path: '/company/safety-environment',
   },
-  {
-    name: 'Statutory Report & Annual Returns',
-    path: '/company/statutory-reports',
-  },
+
 ];
 
 /* ================= PROJECTS DROPDOWN ================= */
