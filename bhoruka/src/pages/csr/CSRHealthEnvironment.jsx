@@ -201,7 +201,7 @@ export default function CSRHealthEnvironment({
       <section className="w-full bg-slate-900 py-8">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
           <a 
-            href="/csr" 
+            href="/csr-overview" 
             className="group inline-flex items-center justify-center px-6 py-3 text-xs font-bold text-white bg-slate-900 hover:bg-slate-800 border border-slate-700 uppercase tracking-widest transition-all duration-300"
           >
             <svg className="w-4 h-4 mr-2 transform group-hover:-translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">

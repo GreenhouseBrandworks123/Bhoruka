@@ -42,7 +42,7 @@ export const educationAchievements = [
     description: "Teachers have shown remarkable improvement in their performance and commitment."
   },
   {
-    metric: "Committees",
+    metric: "Committee",
     label: "Responsibility",
     description: "Betterment committees have become more responsible and assertive in running the schools."
   }
