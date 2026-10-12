@@ -69,7 +69,7 @@ export default function FactSheetOverview() {
           {/* Sharp CTA Button - Changed to Bhoruka Blue */}
           <div>
             <Link 
-              to="/csr/factsheet" 
+              to="/csr/fact-sheet" 
               className="group inline-flex items-center justify-center px-10 py-4 text-xs font-bold text-white bg-[#0B4B94] hover:bg-[#083870] transition-all duration-300 uppercase tracking-widest"
             >
               View Complete Fact Sheet

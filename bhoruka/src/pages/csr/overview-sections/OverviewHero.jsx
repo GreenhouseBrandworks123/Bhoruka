@@ -47,7 +47,7 @@ export default function OverviewHero() {
               Explore Our Impact
             </button>
             <Link 
-              to="/csr/factsheet" 
+              to="/csr/fact-sheet" 
               className="inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-white bg-white/10 border border-white/30 hover:bg-white/20 backdrop-blur-sm rounded-lg shadow-sm transition-all duration-200"
             >
               View Fact Sheet

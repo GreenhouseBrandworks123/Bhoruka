@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import communityImage from '../../../assets/images/csr-community/1.webp';
 
 export default function CorePillarsOverview() {
   const pillars = [
@@ -11,7 +12,7 @@ export default function CorePillarsOverview() {
     },
     {
       title: 'Community',
-      image: 'https://images.unsplash.com/photo-1593113514088-34f71a93e36e?auto=format&fit=crop&w=800&q=80',
+      image: communityImage,
       description: 'Socio-economic growth of the communities in the villages will bring national growth & prosperity. We take up comprehensive survey to find out economic condition, social status, health and education level & facilities available in the area.',
       link: '/csr/community'
     },

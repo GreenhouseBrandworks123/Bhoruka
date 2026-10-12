@@ -35,7 +35,7 @@ export default function OrganisationOverview() {
           {/* Sharp Action Bar */}
           <div>
             <Link 
-              to="/csr/organisation" 
+              to="/csr-organization" 
               className="inline-flex items-center justify-center px-8 py-4 text-xs font-bold text-white bg-[#0B4B94] hover:bg-[#083870] uppercase tracking-widest transition-colors shadow-sm"
             >
               Meet The Leadership Team
