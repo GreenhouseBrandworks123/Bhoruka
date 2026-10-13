@@ -28,10 +28,9 @@ const CsrOrganization = lazy(()=>import('../pages/csr/CsrOrganization'));
 
 const CSREducation = lazy(() => import('../pages/csr/CSREducation'));
 const CSRFactsheet = lazy(() => import('../pages/csr/CSRFactsheet'));
-
-
 const CsrCommunity = lazy (()=>import ('../pages/csr/CsrCommunity'))
 const CsrHealth = lazy (()=> import ('../pages/csr/CSRHealthEnvironment'))
+const CSRNewsandEvents = lazy(()=> import('../pages/csr/CSRNewsandEvents'))
 const AppRoutes = () => {
   return (
     <Suspense fallback={<Loader />}>
@@ -62,6 +61,7 @@ const AppRoutes = () => {
         <Route path="/csr/education" element={<CSREducation />} />
         <Route path="/csr/fact-sheet" element={<CSRFactsheet />} />
         <Route path="csr/health-environment" element = {<CsrHealth/>}/>
+        <Route path="/csr/news-events" element = {<CSRNewsandEvents/>}/>
       </Routes>
     </Suspense>
   );
