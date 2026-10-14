@@ -6,7 +6,7 @@ import Loader from '../components/common/Loader';
 const Home = lazy(() => import('../pages/Home'));
 const AboutUs = lazy(() => import('../pages/AboutUs'));
 const Clients = lazy(() => import('../pages/Clients'));
-const Sustainability = lazy(() => import('../pages/Sustainability'));
+const Newsletters = lazy(() => import("../pages/Newsletters"));
 
 /* ================= OPERATIONS ================= */
 const HydroPower = lazy(() => import('../pages/operations/HydroPower'));
@@ -39,6 +39,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/clients" element={<Clients />} />
+        <Route path="/newsletters" element={<Newsletters />} />
 
         {/* ================= OPERATIONS ================= */}
         <Route path="/hydro" element={<HydroPower />} />

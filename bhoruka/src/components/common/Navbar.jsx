@@ -53,18 +53,8 @@ const projectItems = [
   },
 ];
 
-/* ================= PRESS / MEDIA DROPDOWN ================= */
 
-const pressMediaItems = [
-  {
-    name: 'Press/Media Contacts',
-    path: '/press-media/contacts',
-  },
-  {
-    name: 'Newsletters',
-    path: '/press-media/newsletters',
-  },
-];
+
 
 /* ================= CSR DROPDOWN ================= */
 
@@ -93,7 +83,7 @@ const csrItems = [
     name: 'Fact Sheet',
     path: '/csr/fact-sheet',
   },
-  
+
   {
     name: 'News & Events',
     path: '/csr/news-events',
@@ -316,10 +306,9 @@ export default function Navbar() {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${
-                      isActive
-                        ? 'text-[#0B4B94] font-semibold'
-                        : 'text-slate-700 hover:text-[#0B4B94]'
+                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${isActive
+                      ? 'text-[#0B4B94] font-semibold'
+                      : 'text-slate-700 hover:text-[#0B4B94]'
                     }`
                   }
                 >
@@ -340,10 +329,9 @@ export default function Navbar() {
                           duration-200
                           ease-out
                           origin-left
-                          ${
-                            isActive
-                              ? 'scale-x-100'
-                              : 'scale-x-0 group-hover:scale-x-100'
+                          ${isActive
+                            ? 'scale-x-100'
+                            : 'scale-x-0 group-hover:scale-x-100'
                           }
                         `}
                       />
@@ -375,10 +363,9 @@ export default function Navbar() {
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
-                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${
-                      isActive
-                        ? 'text-[#0B4B94] font-semibold'
-                        : 'text-slate-700 hover:text-[#0B4B94]'
+                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${isActive
+                      ? 'text-[#0B4B94] font-semibold'
+                      : 'text-slate-700 hover:text-[#0B4B94]'
                     }`
                   }
                 >
@@ -399,10 +386,9 @@ export default function Navbar() {
                           duration-200
                           ease-out
                           origin-left
-                          ${
-                            isActive
-                              ? 'scale-x-100'
-                              : 'scale-x-0 group-hover:scale-x-100'
+                          ${isActive
+                            ? 'scale-x-100'
+                            : 'scale-x-0 group-hover:scale-x-100'
                           }
                         `}
                       />
@@ -418,10 +404,9 @@ export default function Navbar() {
                 <NavLink
                   to="/clients"
                   className={({ isActive }) =>
-                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${
-                      isActive
-                        ? 'text-[#0B4B94] font-semibold'
-                        : 'text-slate-700 hover:text-[#0B4B94]'
+                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${isActive
+                      ? 'text-[#0B4B94] font-semibold'
+                      : 'text-slate-700 hover:text-[#0B4B94]'
                     }`
                   }
                 >
@@ -442,10 +427,9 @@ export default function Navbar() {
                           duration-200
                           ease-out
                           origin-left
-                          ${
-                            isActive
-                              ? 'scale-x-100'
-                              : 'scale-x-0 group-hover:scale-x-100'
+                          ${isActive
+                            ? 'scale-x-100'
+                            : 'scale-x-0 group-hover:scale-x-100'
                           }
                         `}
                       />
@@ -465,10 +449,20 @@ export default function Navbar() {
 
               {/* ================= PRESS / MEDIA ================= */}
 
-              <Dropdown
-                name="Press/Media"
-                items={pressMediaItems}
-              />
+              <li>
+                <NavLink
+                  to="/newsletters"
+                  className={({ isActive }) =>
+                    `relative text-sm lg:text-base font-medium whitespace-nowrap
+       transition-colors duration-200 py-1 inline-block ${isActive
+                      ? "text-[#0B4B94] font-semibold"
+                      : "text-slate-700 hover:text-[#0B4B94]"
+                    }`
+                  }
+                >
+                  Newsletters
+                </NavLink>
+              </li>
 
 
               {/* ================= JOBS ================= */}
@@ -477,10 +471,9 @@ export default function Navbar() {
                 <NavLink
                   to="/jobs"
                   className={({ isActive }) =>
-                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${
-                      isActive
-                        ? 'text-[#0B4B94] font-semibold'
-                        : 'text-slate-700 hover:text-[#0B4B94]'
+                    `relative text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 py-1 inline-block group ${isActive
+                      ? 'text-[#0B4B94] font-semibold'
+                      : 'text-slate-700 hover:text-[#0B4B94]'
                     }`
                   }
                 >
@@ -501,10 +494,9 @@ export default function Navbar() {
                           duration-200
                           ease-out
                           origin-left
-                          ${
-                            isActive
-                              ? 'scale-x-100'
-                              : 'scale-x-0 group-hover:scale-x-100'
+                          ${isActive
+                            ? 'scale-x-100'
+                            : 'scale-x-0 group-hover:scale-x-100'
                           }
                         `}
                       />
@@ -651,10 +643,9 @@ export default function Navbar() {
           bg-white
           border-b
           border-slate-100
-          ${
-            isMobileMenuOpen
-              ? 'max-h-[1000px] opacity-100'
-              : 'max-h-0 opacity-0 pointer-events-none'
+          ${isMobileMenuOpen
+            ? 'max-h-[1000px] opacity-100'
+            : 'max-h-0 opacity-0 pointer-events-none'
           }
         `}
       >
@@ -671,10 +662,9 @@ export default function Navbar() {
                 to="/"
                 onClick={closeMobileMenu}
                 className={({ isActive }) =>
-                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${
-                    isActive
-                      ? 'bg-blue-50 text-[#0B4B94] font-semibold'
-                      : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
+                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${isActive
+                    ? 'bg-blue-50 text-[#0B4B94] font-semibold'
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
                   }`
                 }
               >
@@ -715,10 +705,9 @@ export default function Navbar() {
                     h-4
                     transition-transform
                     duration-200
-                    ${
-                      mobileDropdown === 'company'
-                        ? 'rotate-180'
-                        : ''
+                    ${mobileDropdown === 'company'
+                      ? 'rotate-180'
+                      : ''
                     }
                   `}
                   fill="none"
@@ -798,10 +787,9 @@ export default function Navbar() {
                     h-4
                     transition-transform
                     duration-200
-                    ${
-                      mobileDropdown === 'projects'
-                        ? 'rotate-180'
-                        : ''
+                    ${mobileDropdown === 'projects'
+                      ? 'rotate-180'
+                      : ''
                     }
                   `}
                   fill="none"
@@ -858,10 +846,9 @@ export default function Navbar() {
                 to="/marketing"
                 onClick={closeMobileMenu}
                 className={({ isActive }) =>
-                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${
-                    isActive
-                      ? 'bg-blue-50 text-[#0B4B94] font-semibold'
-                      : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
+                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${isActive
+                    ? 'bg-blue-50 text-[#0B4B94] font-semibold'
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
                   }`
                 }
               >
@@ -879,10 +866,9 @@ export default function Navbar() {
                 to="/clients"
                 onClick={closeMobileMenu}
                 className={({ isActive }) =>
-                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${
-                    isActive
-                      ? 'bg-blue-50 text-[#0B4B94] font-semibold'
-                      : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
+                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${isActive
+                    ? 'bg-blue-50 text-[#0B4B94] font-semibold'
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
                   }`
                 }
               >
@@ -923,10 +909,9 @@ export default function Navbar() {
                     h-4
                     transition-transform
                     duration-200
-                    ${
-                      mobileDropdown === 'csr'
-                        ? 'rotate-180'
-                        : ''
+                    ${mobileDropdown === 'csr'
+                      ? 'rotate-180'
+                      : ''
                     }
                   `}
                   fill="none"
@@ -975,86 +960,21 @@ export default function Navbar() {
             </li>
 
 
-            {/* ================= MOBILE PRESS / MEDIA ================= */}
+            {/* ================ MOBILE NEWSLETTERS ================ */}
 
             <li>
-
-              <button
-                type="button"
-                onClick={() => toggleMobileDropdown('press')}
-                className="
-                  flex
-                  items-center
-                  justify-between
-                  w-full
-                  px-4
-                  py-3
-                  rounded-lg
-                  text-base
-                  font-medium
-                  text-slate-700
-                  hover:bg-slate-50
-                  hover:text-[#0B4B94]
-                "
+              <NavLink
+                to="/newsletters"
+                onClick={closeMobileMenu}
+                className={({ isActive }) =>
+                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors ${isActive
+                    ? "bg-blue-50 text-[#0B4B94] font-semibold"
+                    : "text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]"
+                  }`
+                }
               >
-
-                Press/Media
-
-                <svg
-                  className={`
-                    w-4
-                    h-4
-                    transition-transform
-                    duration-200
-                    ${
-                      mobileDropdown === 'press'
-                        ? 'rotate-180'
-                        : ''
-                    }
-                  `}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-
-              </button>
-
-              {mobileDropdown === 'press' && (
-
-                <div className="ml-4 mt-1 border-l-2 border-blue-100">
-
-                  {pressMediaItems.map((item) => (
-
-                    <Link
-                      key={item.name}
-                      to={item.path}
-                      onClick={closeMobileMenu}
-                      className="
-                        block
-                        px-4
-                        py-2.5
-                        text-sm
-                        text-slate-600
-                        hover:text-[#0B4B94]
-                        hover:bg-blue-50
-                      "
-                    >
-                      {item.name}
-                    </Link>
-
-                  ))}
-
-                </div>
-
-              )}
-
+                Newsletters
+              </NavLink>
             </li>
 
 
@@ -1066,10 +986,9 @@ export default function Navbar() {
                 to="/jobs"
                 onClick={closeMobileMenu}
                 className={({ isActive }) =>
-                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${
-                    isActive
-                      ? 'bg-blue-50 text-[#0B4B94] font-semibold'
-                      : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
+                  `block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-150 ${isActive
+                    ? 'bg-blue-50 text-[#0B4B94] font-semibold'
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B4B94]'
                   }`
                 }
               >

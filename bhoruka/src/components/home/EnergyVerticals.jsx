@@ -83,7 +83,7 @@ const EnergyVerticals = () => {
               <div className="relative w-full h-80 overflow-hidden rounded-sm shadow-md">
                 <img 
                   src={vertical.image} 
-                  alt={vertical.title} 
+                  alt={vertical.title}                                                                                                                      
                   className="w-full h-full object-cover transform group-hover:scale-110 transition duration-1000 ease-in-out"
                 />
                 {/* Dark overlay that fades slightly on hover */}
