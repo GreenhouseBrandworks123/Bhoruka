@@ -7,6 +7,8 @@ const Home = lazy(() => import('../pages/Home'));
 const AboutUs = lazy(() => import('../pages/AboutUs'));
 const Clients = lazy(() => import('../pages/Clients'));
 const Newsletters = lazy(() => import("../pages/Newsletters"));
+const JobsAtBPCL = lazy(() => import('../pages/JobsAtBPCL'));
+const ContactUs = lazy(() => import('../pages/ContactUs'));
 
 /* ================= OPERATIONS ================= */
 const HydroPower = lazy(() => import('../pages/operations/HydroPower'));
@@ -40,6 +42,8 @@ const AppRoutes = () => {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/newsletters" element={<Newsletters />} />
+        <Route path="/jobs" element={<JobsAtBPCL />} />
+        <Route path="/contact" element={<ContactUs />} />
 
         {/* ================= OPERATIONS ================= */}
         <Route path="/hydro" element={<HydroPower />} />
