@@ -100,7 +100,7 @@ export default function NewslettersOverview() {
         {/* Main Section CTA */}
         <div className="flex justify-center border-t border-slate-200 pt-16">
           <Link 
-            to="/csr/newsletters" 
+            to="/newsletters" 
             className="group inline-flex items-center justify-center px-10 py-4 text-xs font-bold text-white bg-[#0B4B94] hover:bg-[#083870] transition-all duration-300 uppercase tracking-widest shadow-sm"
           >
             View All Newsletters

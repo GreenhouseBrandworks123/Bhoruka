@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowRight, BriefcaseBusiness, FileText, Mail, MoveUpRight, Zap } from 'lucide-react';
+import React, { useRef, useState } from 'react';
+import { ArrowRight, BriefcaseBusiness, CheckCircle2, FileText, Mail, Zap } from 'lucide-react';
 
 const opportunities = [
   { title: 'Hydro Power', detail: 'Plant operations, maintenance and hydropower engineering.' },
@@ -25,25 +25,34 @@ function JobField({ label, name, type = 'text', placeholder, required = true, wi
   );
 }
 
-function applyByEmail(event) {
+function SuccessModal({ open, onOk }) {
+  return (
+    <div className={`fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/55 p-4 transition-opacity duration-200 ${open ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'}`} aria-hidden={!open}>
+      <section role="dialog" aria-modal="true" aria-labelledby="job-success-heading" className={`w-full max-w-md rounded-xl bg-white p-6 text-center shadow-2xl transition duration-200 sm:p-8 ${open ? 'scale-100 translate-y-0' : 'scale-95 translate-y-2'}`}>
+        <CheckCircle2 className="mx-auto text-emerald-600" size={52} strokeWidth={1.8} aria-hidden="true" />
+        <h2 id="job-success-heading" className="mt-4 text-xl font-bold text-slate-900 sm:text-2xl">Application Submitted Successfully!</h2>
+        <p className="mt-3 text-sm leading-6 text-slate-600">Thank you for your interest in joining Bhoruka Power Corporation Limited.</p>
+        <p className="mt-1 text-sm leading-6 text-slate-600">Your application has been submitted successfully for this demo.</p>
+        <button type="button" onClick={onOk} className="mt-6 min-w-24 rounded-md bg-[#0B4B94] px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-[#083870] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800">OK</button>
+      </section>
+    </div>
+  );
+}
+
+function handleApplicationSubmit(event, setSuccessOpen) {
   event.preventDefault();
-  const values = Object.fromEntries(new FormData(event.currentTarget).entries());
-  const body = [
-    `Full Name: ${values.fullName}`,
-    `Phone / Mobile: ${values.phone}`,
-    `Email: ${values.email}`,
-    `Address: ${values.address}`,
-    `Applying for (Post): ${values.post}`,
-    `Skill Set: ${values.skills}`,
-    `Experience: ${values.experience}`,
-    '',
-    `Resume selected in browser: ${values.resume?.name || 'No file selected'}`,
-    'Please attach the resume file manually before sending.',
-  ].join('\n');
-  window.location.href = `mailto:info@bhorukapower.com?subject=${encodeURIComponent(`Job application - ${values.post}`)}&body=${encodeURIComponent(body)}`;
+  setSuccessOpen(true);
 }
 
 export default function JobsAtBPCL() {
+  const [successOpen, setSuccessOpen] = useState(false);
+  const formRef = useRef(null);
+
+  const closeSuccess = () => {
+    setSuccessOpen(false);
+    formRef.current?.reset();
+  };
+
   return (
     <main className="bg-slate-50 text-[#17395f]">
       <section className="border-b border-blue-950 bg-gradient-to-r from-[#082f63] via-[#0B4B94] to-[#1764ac] px-5 py-10 text-white sm:py-12">
@@ -73,13 +82,13 @@ export default function JobsAtBPCL() {
           <aside className="rounded-lg bg-[#0B4B94] p-5 text-white sm:p-6">
             <span className="flex h-10 w-10 items-center justify-center rounded-md bg-white/10"><FileText size={20} aria-hidden="true" /></span>
             <h2 className="mt-4 text-xl font-bold">Apply to join us</h2>
-            <p className="mt-2 text-sm leading-6 text-blue-100">Share your details and the role you are interested in. The application form prepares an email for you to review and send.</p>
-            <div className="mt-5 border-t border-white/20 pt-4"><p className="text-sm font-semibold">Prefer email?</p><a href="mailto:info@bhorukapower.com" className="mt-1 inline-flex items-center gap-2 text-sm font-medium text-white underline decoration-blue-300 underline-offset-4 hover:text-blue-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white">info@bhorukapower.com <MoveUpRight size={14} aria-hidden="true" /></a></div>
+            <p className="mt-2 text-sm leading-6 text-blue-100">Share your details and the role you are interested in. This demo will confirm your application on this page.</p>
+            <div className="mt-5 border-t border-white/20 pt-4"><p className="text-sm font-semibold">Alternatively, email your resume to:</p><p className="mt-1 text-sm font-medium text-white">info@bhorukapower.com</p></div>
           </aside>
 
           <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm sm:p-7">
             <div className="mb-5"><p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-800">Application details</p><h2 id="application-heading" className="mt-1 text-xl font-bold">Jobs @ BPCL</h2><p className="mt-1 text-sm text-slate-500">Fields marked with <span className="text-red-600">*</span> are required.</p></div>
-            <form onSubmit={applyByEmail} className="grid gap-4 sm:grid-cols-2">
+            <form ref={formRef} onSubmit={(event) => handleApplicationSubmit(event, setSuccessOpen)} className="grid gap-4 sm:grid-cols-2">
               <JobField label="Full Name" name="fullName" placeholder="Your full name" />
               <JobField label="Phone / Mobile" name="phone" type="tel" placeholder="Your contact number" />
               <JobField label="Email" name="email" type="email" placeholder="you@example.com" />
@@ -90,15 +99,16 @@ export default function JobsAtBPCL() {
               <div className="sm:col-span-2">
                 <label className={labelClass} htmlFor="job-resume">Resume Attachment <span className="text-red-600">*</span></label>
                 <input id="job-resume" name="resume" type="file" accept=".pdf,.doc,.docx" required className="block w-full cursor-pointer rounded-md border border-slate-300 bg-white text-sm text-slate-600 file:mr-4 file:border-0 file:bg-blue-50 file:px-4 file:py-2.5 file:text-sm file:font-semibold file:text-blue-800 hover:file:bg-blue-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-700" />
-                <p className="mt-1.5 text-xs leading-5 text-slate-500">A mailto link cannot attach a local file. When your email application opens, manually attach the resume file before sending.</p>
+                <p className="mt-1.5 text-xs leading-5 text-slate-500">The selected resume is included only in this frontend demo and is not uploaded or stored.</p>
               </div>
-              <div className="sm:col-span-2"><button type="submit" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#0B4B94] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#083870] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800">Prepare application email <ArrowRight className="ml-2" size={16} aria-hidden="true" /></button><p className="mt-2 text-xs text-slate-500">Your application is not submitted until you review and send the email.</p></div>
+              <div className="sm:col-span-2"><button type="submit" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#0B4B94] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#083870] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800">Submit Application <ArrowRight className="ml-2" size={16} aria-hidden="true" /></button><p className="mt-2 text-xs text-slate-500">Demo interaction only. Your details are not sent to or stored on a server.</p></div>
             </form>
           </div>
         </section>
-        <p className="mt-5 rounded-md border border-blue-100 bg-blue-50 px-4 py-3 text-sm text-slate-700">Alternatively, email your resume to <a className="font-semibold text-blue-800 underline underline-offset-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-700" href="mailto:info@bhorukapower.com">info@bhorukapower.com</a>. Please attach your resume manually to the email.</p>
-        <p className="mt-4 flex items-center gap-2 text-xs text-slate-500"><Mail size={14} aria-hidden="true" />Email drafts are created on your device and are not sent or stored by this website.</p>
+        <p className="mt-5 rounded-md border border-blue-100 bg-blue-50 px-4 py-3 text-sm text-slate-700">Alternatively, email your resume to <span className="font-semibold text-blue-800">info@bhorukapower.com</span>.</p>
+        <p className="mt-4 flex items-center gap-2 text-xs text-slate-500"><Mail size={14} aria-hidden="true" />This is a frontend demo; application details are not sent or stored.</p>
       </div>
+      <SuccessModal open={successOpen} onOk={closeSuccess} />
     </main>
   );
 }
